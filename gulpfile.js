@@ -84,11 +84,25 @@ function css() {
     // .pipe(webpcss())
     .pipe(dest(path.build.css))
     .pipe(clean_css())
+    .pipe(webpcss())
     .pipe(rename({
       extname: ".min.css"
     }))
     .pipe(dest(path.build.css))
     .pipe(browsersync.stream())
+}
+
+gulp.task('c', function () {
+  gulp.src(project_folder + '/css/style.css')
+      .pipe(webpcss()) // or .pipe(webpCss(['.jpg','.jpeg']))
+      .pipe(gulp.dest('./public/css/'))
+});
+
+function cs() {
+  return src(project_folder + '/css/style.css')
+  .pipe(clean_css())
+  .pipe(webpcss()) 
+  .pipe(dest('./public/css/'))
 }
 
 function js() {
@@ -199,6 +213,7 @@ newFont.path = source.dirname + '\\' + source.stem + '.' + type;
 
 , меняем '\\' на '/' 
 */
+exports.cs = cs; // insert font-face
 exports.fst = fontsStyle; // insert font-face
 exports.f = fonts; // ttf2woff
 exports.ss = svgSprite; // pack svg

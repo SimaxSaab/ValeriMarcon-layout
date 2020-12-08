@@ -203,7 +203,7 @@ function fontsStyle(params) {
 function cb() { }
   
 
-let build = gulp.series(clean, gulp.parallel(js, css, html, img)); //, fonts //, fontsStyle
+let build = gulp.series(clean, gulp.parallel(js, css, html, img, fonts)); //, fonts //, fontsStyle
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.o2f = otf2ttf; /*  

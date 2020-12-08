@@ -1,24 +1,27 @@
 .header {
-  margin: 0 auto;
-  max-width: 300px;
+  margin: 0 10px;
+  // max-width: 300px;
   
   &-scr1 {
     margin-top: 13px;
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    // height: 22px;
   }
 
   &-scr1__logo {
-    margin: auto;
+    margin: 0 auto;
     cursor: pointer;
   }
 
   &-scr1__plug {
+    // margin-left: 10px;
     width: 23px;
   }
 
   &-scr1__to-call {
+    // margin-right: 10px;
     margin-top: 3px;
     cursor: pointer;
   }
@@ -43,6 +46,10 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.nav {
+  width: 100%;
 }
 
 .nav__toggle {
@@ -138,41 +145,59 @@
   border-bottom: 1px solid $price;
 }
 
-.header {
+@media (max-width: $mobile) {
+ 
+  .nav--closed .list__item {
+    display: none;
+  }
+  
+  .nav--opened {
+    .nav__wrapper {
+      position: static;
+    }
+  }
+  
+  .nav--nojs .nav__toggle {
+    display: none;
+  }
+  
+  .nav--nojs .nav__wrapper {
+    position: static;
+    min-height: 0;
+  }
+
+  .nav--nojs .list__item {
+    display: block;
+  }
 }
-.header-scr1 {
-}
-.header-scr1__logo {
-}
-.header-scr1__logo-image {
-}
-.header-scr1__to-call {
-}
-.header-scr1__to-call-image {
-}
-.nav {
-}
-.nav--closed {
-}
-.nav__toggle {
-}
-.hidden-aria {
-}
-.nav__wrapper {
-}
-.nav__list {
-}
-.list {
-}
-.list__item {
-}
-.list__item--active {
-}
+
+
 .header__title {
+    // width: 296px;
+    // height: 21px;
+    margin: 8px 0 0;
+    // margin-top: 8px;
+    font-family: Montserrat;
+    font-size: 8px;
+    font-weight: normal;
+    line-height: 1.5;
+    text-align: center;
+    color: $main-text;  
 }
 .header__discont {
+  margin: 20px 0 0;
+  font-family: YesevaOne;
+  font-size: 40px;
+  text-align: center;
+  color: $main-text;
 }
 .header__dresses {
+  margin: 7px 0 0;
+  font-family: Montserrat;
+  font-size: 12px;
+  line-height: 1.75;
+  text-align: center;
+  color: $main-text;
 }
 .header__video {
 }

@@ -1,6 +1,6 @@
 .header {
   margin: 0 10px;
-  // max-width: 300px;
+  max-width: 1000px;
   
   &-scr1 {
     margin-top: 13px;
@@ -150,7 +150,13 @@
   background-color: $doc;
   border-top: 1px solid $pic;
   border-bottom: 1px solid $price;
+
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 24px;
 }
+
+
 
 @media (max-width: $mobile) {
  
@@ -191,6 +197,66 @@
     text-align: center;
     color: $main-text;  
 }
+
+.del-br-desk {
+  display: inline;
+}
+
+.ins-br-desk {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .header-scr1__plug, .nav__toggle, .del-br-desk {
+    display: none;
+  }
+  .header-scr1__logo {
+    order: 1;
+    margin: initial;
+    width: 30%;
+  }
+  .nav {
+    order: 2;
+    width: 67%;
+    margin: -13px auto;
+
+    &__list {
+      margin: 0;
+    }
+  }
+  .header-scr1__to-call {
+    order: 3;
+  }
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .list a {
+    border: none;
+    font-size: 12px;
+    text-transform: initial;
+  }
+  .header__title {
+    text-align: left;
+  }
+  .ins-br-desk {
+    display: inline;
+  }
+}
+
+@media (min-width: 900px) {
+  .nav {
+    width: 57%;
+  }
+}
+
+@media (min-width: $desktop) {
+  .header {
+    margin: 0 auto;
+  }
+} 
+
+
 .header__discont {
   margin: 20px 0 0;
   font-family: YesevaOne;

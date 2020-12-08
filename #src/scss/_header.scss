@@ -26,9 +26,16 @@
     cursor: pointer;
   }
 
+  &__video, &__v {
+    // background: url("../img/scr1/main-image.png") 0 0 no-repeat;
+    // height: 227px;
+    width: 300px;
+    height: 254px;
+    cursor: pointer;
+  }
+
   &__video {
-    background: url("../img/scr1/main-image.png") 0 0 no-repeat;
-    height: 227px;
+    margin-top: 22px;
   }
 }
 
@@ -191,7 +198,7 @@
   text-align: center;
   color: $main-text;
 }
-.header__dresses {
+.header__dresses, .header__tagline {
   margin: 7px 0 0;
   font-family: Montserrat;
   font-size: 12px;
@@ -199,23 +206,55 @@
   text-align: center;
   color: $main-text;
 }
-.header__video {
-}
 .header__tagline {
+  margin-top: 16px;
 }
 .header__btn-choice {
+    display: block;
+    width: 300px;
+    // height: 43px;
+    margin: 18px auto 0;
+    padding: 14px 33px 14px 33px;
+    border-radius: 5px;
+    border: solid 2px #000000;
+    background-color: #020106;
+    color: $doc;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
 }
 .header__scroll-bellow {
+  margin: 17px auto 0;
+  font-family: Montserrat;
+  font-size: 8px;
+  color: $text;
+  text-align: center;
 }
 .header__down-image {
+  display: block;
+  margin: 5px auto 0px;
 }
 .header__trigger {
+  margin-top: 20px;
 }
 .trigger {
+  background: url('../img/scr1/leaves.png') 0 0 no-repeat;
 }
 .trigger__image {
+  margin: 13px 0 0 8px;
 }
 .trigger__title {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  color: $text;
+  margin: 0;
 }
 .trigger__desribe {
+  font-family: Montserrat;
+  font-size: 11px;
+  color: $text;
+  line-height: 1.5;
+  margin: 15px 0 0;
 }

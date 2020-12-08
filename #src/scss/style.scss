@@ -1,5 +1,8 @@
 @import "node_modules/normalize-scss/sass/normalize/import-now";
 // @import "fonts";
+* {
+  box-sizing: border-box;
+}
 @import "mixins";
 @import "fonts";
 @import "variables";

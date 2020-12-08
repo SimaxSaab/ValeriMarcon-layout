@@ -584,7 +584,7 @@ template {
 }
 
 .header__video {
-  margin-top: 22px;
+  margin: 22px auto 0;
 }
 
 .hidden-aria:not(:focus):not(:active) {

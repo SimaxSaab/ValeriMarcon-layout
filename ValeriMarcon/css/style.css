@@ -517,6 +517,14 @@ template {
 @font-face {
   font-family: "Montserrat";
   font-display: swap;
+  src: url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
   src: url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
@@ -789,6 +797,121 @@ template {
   color: #1b1919;
   line-height: 1.5;
   margin: 15px 0 0;
+}
+
+.catalog {
+  margin: 66px 10px 0;
+  max-width: 1000px;
+}
+
+.catalog__collection {
+  font-family: Montserrat;
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+}
+
+.catalog__title {
+  text-align: center;
+  font-family: YesevaOne;
+  margin: 16px 0 0;
+  font-size: 29.5px;
+}
+
+.catalog__store,
+.catalog__choosing {
+  font-family: Montserrat;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 33px 0 0;
+}
+
+.catalog__bolder {
+  font-weight: 600;
+}
+
+.catalog__choosing {
+  margin: 16px 0 0;
+}
+
+.catalog__dress-name {
+  margin: 12px 0 0;
+}
+
+.catalog__name {
+  padding: 10px 15px;
+  border-radius: 17px;
+  border: solid 1px #000000;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 11px;
+  display: inline-block;
+  font-weight: 700;
+  color: #000;
+}
+
+.catalog__sale {
+  font-family: Montserrat;
+  font-size: 11px;
+  text-align: center;
+  line-height: 1.91;
+  margin: 35px 0 0;
+}
+
+.catalog__red-time {
+  color: #d01345;
+}
+
+.catalog__card {
+  margin: 26px 0 0;
+}
+
+.card__pic {
+  width: 251px;
+  height: 335px;
+  background: url("../img/scr2/scr2-image.jpg");
+}
+
+.card__image {
+  margin: 10px 0 0 10px;
+}
+
+.card__price {
+  margin: 20px 0 0;
+}
+
+.card__old-price {
+  font-family: Montserrat;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+.card__new-price {
+  font-family: Montserrat;
+  font-size: 14px;
+  color: #d01345;
+  font-weight: 600;
+}
+
+.card__dress-name {
+  font-family: Montserrat;
+  font-size: 14px;
+  margin: 10px 0 0;
+  text-decoration: underline;
+}
+
+.card__btn-more {
+  padding: 10px 15px;
+  border-radius: 17px;
+  border: solid 1px #000000;
+  font-family: Montserrat;
+  font-size: 11px;
+  font-weight: 500;
+  display: inline-block;
+  margin: 16px 0 0;
+  text-decoration: none;
+  color: #000;
 }
 
 @media (min-width: 768px) {

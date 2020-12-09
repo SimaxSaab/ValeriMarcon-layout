@@ -1,0 +1,131 @@
+.catalog {
+  margin: 66px 10px 0;
+  max-width: 1000px;
+
+  &__collection {
+    font-family: Montserrat;
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+  }
+
+  &__title {
+    text-align: center;
+    font-family: YesevaOne;
+    margin: 16px 0 0; 
+    font-size: 29.5px;
+  }
+  
+  &__store, &__choosing {
+    font-family: Montserrat;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 33px 0 0;
+  }
+
+  &__bolder {
+    font-weight: 600;
+  }
+  &__choosing {
+    margin: 16px 0 0;
+  }
+
+  &__dress-name {
+    margin: 12px 0 0
+  }
+
+  &__name {
+    padding: 10px 15px;
+    border-radius: 17px;
+    border: solid 1px #000000;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 11px;
+    display:inline-block;
+    font-weight: 700;
+    color: $main-text;
+  }
+
+  &__sale {
+    font-family: Montserrat;
+    font-size: 11px;
+    text-align: center;
+    line-height: 1.91;
+    margin: 35px 0 0;
+  }
+  
+  &__red-time {
+    color: $price;
+  }
+
+  &__card {
+    margin: 26px 0 0; 
+  }
+}
+
+.card__pic {
+  width: 251px;
+  height: 335px;
+  background: url('../img/scr2/scr2-image.jpg');
+}
+
+.card__image {
+  margin: 10px 0 0 10px;
+}
+
+.card__price {
+  margin: 20px 0 0;
+}
+
+.card__old-price {
+  font-family: Montserrat;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+.card__new-price {
+  font-family: Montserrat;
+  font-size: 14px;
+  color: $price;
+  font-weight: 600;
+}
+.card__dress-name {
+  font-family: Montserrat;
+  font-size: 14px;
+  margin: 10px 0 0;
+  text-decoration: underline;
+}
+.card__btn-more {
+  padding: 10px 15px;
+  border-radius: 17px;
+  border: solid 1px #000000;
+  font-family: Montserrat;
+  font-size: 11px;
+  font-weight: 500;
+  display: inline-block;
+  margin: 16px 0 0;
+  text-decoration: none;
+  color: $main-text;
+}
+
+.catalog__collection {
+}
+.catalog__title {
+}
+.catalog__store {
+}
+.catalog__bolder {
+}
+.catalog__choosing {
+}
+.catalog__dress-name {
+}
+.catalog__sale {
+}
+.catalog__card {
+}
+.card {
+}
+
+
+

@@ -837,6 +837,8 @@ template {
 
 .catalog__dress-name {
   margin: 12px 0 0;
+  overflow: auto;
+  white-space: nowrap;
 }
 
 .catalog__name {

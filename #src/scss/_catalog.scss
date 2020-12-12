@@ -32,7 +32,9 @@
   }
 
   &__dress-name {
-    margin: 12px 0 0
+    margin: 12px 0 0;
+    overflow: auto;
+    white-space: nowrap;
   }
 
   &__name {

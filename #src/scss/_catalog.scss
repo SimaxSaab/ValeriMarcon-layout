@@ -32,21 +32,29 @@
   }
 
   &__dress-name {
+    font-size : 0;
     margin: 12px 0 0;
     overflow: auto;
     white-space: nowrap;
   }
 
   &__name {
-    padding: 10px 15px;
+    padding: 10px 14px;
+    margin: 0 5px 0 0;
     border-radius: 17px;
     border: solid 1px #000000;
     text-decoration: none;
     font-family: Montserrat;
     font-size: 11px;
-    display:inline-block;
+    display: inline-block;
     font-weight: 700;
     color: $main-text;
+  }
+
+  &__name--active {
+    background-color: $pic;
+    color: $doc;
+    border: solid 1px $pic;
   }
 
   &__sale {
@@ -61,15 +69,50 @@
     color: $price;
   }
 
+  &__cards {
+    font-size : 0;
+    overflow: auto;
+    white-space: nowrap;
+  }
+
   &__card {
     margin: 26px 0 0; 
+    display: inline-block;
+    
+    p {
+      white-space: normal;
+    }
   }
+}
+
+.card {
+  width: 251px;
 }
 
 .card__pic {
   width: 251px;
   height: 335px;
+}
+
+.pic-1 {
   background: url('../img/scr2/scr2-image.jpg');
+  background-size: cover;
+}
+.pic-2 {
+  background: url('../img/scr2/coll-2.png');
+  background-size: cover;
+}
+.pic-3 {
+  background: url('../img/scr2/coll-3.png');
+  background-size: cover;
+}
+.pic-4 {
+  background: url('../img/scr2/coll-4.png');
+  background-size: cover;
+}
+.pic-5 {
+  background: url('../img/scr2/coll-5.png');
+  background-size: cover;
 }
 
 .card__image {
@@ -108,25 +151,6 @@
   margin: 16px 0 0;
   text-decoration: none;
   color: $main-text;
-}
-
-.catalog__collection {
-}
-.catalog__title {
-}
-.catalog__store {
-}
-.catalog__bolder {
-}
-.catalog__choosing {
-}
-.catalog__dress-name {
-}
-.catalog__sale {
-}
-.catalog__card {
-}
-.card {
 }
 
 

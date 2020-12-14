@@ -514,6 +514,11 @@ template {
           box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 @font-face {
   font-family: "Montserrat";
   font-display: swap;
@@ -580,16 +585,34 @@ template {
   width: 23px;
 }
 
-.header-scr1__to-call {
+.header-scr1__calling {
   margin-top: 3px;
   cursor: pointer;
 }
 
-.header__video,
-.header__v {
-  width: 300px;
-  height: 254px;
+.header-scr1__ring-desktop,
+.header-scr1__to-call-desktop {
+  display: none;
+}
+
+.header__video {
+  width: 100%;
+  padding-bottom: 84%;
+  background: gold;
   cursor: pointer;
+  position: relative;
+}
+
+.header__v {
+  max-width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: transparent url("../img/scr1/main--image.png") 50% 50%/cover no-repeat;
 }
 
 .header__video {
@@ -836,13 +859,15 @@ template {
 }
 
 .catalog__dress-name {
+  font-size: 0;
   margin: 12px 0 0;
   overflow: auto;
   white-space: nowrap;
 }
 
 .catalog__name {
-  padding: 10px 15px;
+  padding: 10px 14px;
+  margin: 0 5px 0 0;
   border-radius: 17px;
   border: solid 1px #000000;
   text-decoration: none;
@@ -851,6 +876,12 @@ template {
   display: inline-block;
   font-weight: 700;
   color: #000;
+}
+
+.catalog__name--active {
+  background-color: #f7a18b;
+  color: #fff;
+  border: solid 1px #f7a18b;
 }
 
 .catalog__sale {
@@ -865,14 +896,53 @@ template {
   color: #d01345;
 }
 
+.catalog__cards {
+  font-size: 0;
+  overflow: auto;
+  white-space: nowrap;
+}
+
 .catalog__card {
   margin: 26px 0 0;
+  display: inline-block;
+}
+
+.catalog__card p {
+  white-space: normal;
+}
+
+.card {
+  width: 251px;
 }
 
 .card__pic {
   width: 251px;
   height: 335px;
+}
+
+.pic-1 {
   background: url("../img/scr2/scr2-image.jpg");
+  background-size: cover;
+}
+
+.pic-2 {
+  background: url("../img/scr2/coll-2.png");
+  background-size: cover;
+}
+
+.pic-3 {
+  background: url("../img/scr2/coll-3.png");
+  background-size: cover;
+}
+
+.pic-4 {
+  background: url("../img/scr2/coll-4.png");
+  background-size: cover;
+}
+
+.pic-5 {
+  background: url("../img/scr2/coll-5.png");
+  background-size: cover;
 }
 
 .card__image {
@@ -929,7 +999,7 @@ template {
         -ms-flex-order: 1;
             order: 1;
     margin: initial;
-    width: 30%;
+    width: 27%;
   }
 
   .nav {
@@ -937,7 +1007,7 @@ template {
     -webkit-order: 2;
         -ms-flex-order: 2;
             order: 2;
-    width: 67%;
+    width: 465px;
     margin: -13px auto;
   }
 
@@ -945,7 +1015,7 @@ template {
     margin: 0;
   }
 
-  .header-scr1__to-call {
+  .header-scr1__calling {
     -webkit-box-ordinal-group: 4;
     -webkit-order: 3;
         -ms-flex-order: 3;
@@ -964,7 +1034,7 @@ template {
 
   .list a {
     border: none;
-    font-size: 12px;
+    font-size: 11px;
     text-transform: initial;
   }
 
@@ -977,15 +1047,54 @@ template {
   }
 }
 
-@media (min-width: 900px) {
-  .nav {
-    width: 57%;
-  }
-}
-
 @media (min-width: 1024px) {
   .header {
     margin: 0 auto;
+  }
+
+  .header-scr1__ring-desktop,
+  .header-scr1__to-call-desktop {
+    display: block;
+    text-align: right;
+  }
+
+  .header-scr1__ring-desktop {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000;
+  }
+
+  .header-scr1__ring-caption-desktop {
+    font-family: Montserrat;
+    font-size: 11px;
+    font-weight: normal;
+  }
+
+  .header-scr1__to-call-desktop {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+
+  .header-scr1__to-call-image {
+    display: none;
+  }
+
+  .header__title {
+    margin: 16px 0 0;
+    font-size: 11px;
+  }
+
+  .nav {
+    width: 50%;
+  }
+
+  .list a {
+    padding: 12px 15px;
+    font-size: 14px;
   }
 }
 

@@ -4,9 +4,13 @@
     <a class="header-scr1__logo">
       <img class="header-scr1__logo-image" src="img/scr1/logo.svg" width="139" height="17" alt="Логотип сайта Valeri Marcon">
     </a>
-    <a class="header-scr1__to-call">
-      <img class="header-scr1__to-call-image" src="img/scr1/to-call.svg" width="18" height="18" alt="Значок звонка в слюжбу заботы о клиентах">
-    </a>
+    <div class="header-scr1__calling">
+      <a href="tel:88005551122" class="header-scr1__ring-desktop">8 800 555 11 22<br><span class="header-scr1__ring-caption-desktop">Звонок по России бесплатный</span></a>
+      <a class="header-scr1__to-call">
+        <p class="header-scr1__to-call-desktop">Заказать звонок</p>
+        <img class="header-scr1__to-call-image" src="img/scr1/to-call.svg" width="18" height="18" alt="Значок звонка в слюжбу заботы о клиентах">
+      </a>
+    </div>
     <nav class="nav nav--closed nav--nojs">
       <button class="nav__toggle" type="button"><span class="hidden-aria">Открыть меню</span></button>
       <div class="nav__wrapper">
@@ -46,7 +50,8 @@
   <p class="header__dresses">На эксклюзивные платья для женщин с размерами от 54 до 62
   </p>
   <div class="header__video">
-    <video preload poster="img/scr1/main--image.png" class="header__v video">
+    <!--poster="img/scr1/main--image.png"--> 
+    <video preload="none" class="header__v video">
       <source src="video/1.webm" type="video/webm">
       <source src="video/1.mp4" type="video/mp4">
       <p>Ваш браузер не подддерживает HTML5 видео. Вот <a href="video/1.mp4">ссылка на видео</a> взамен.</p>

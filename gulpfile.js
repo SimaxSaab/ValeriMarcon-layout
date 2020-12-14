@@ -84,7 +84,7 @@ function css() {
     // .pipe(webpcss())
     .pipe(dest(path.build.css))
     .pipe(clean_css())
-    .pipe(webpcss())
+    //.pipe(webpcss())
     .pipe(rename({
       extname: ".min.css"
     }))

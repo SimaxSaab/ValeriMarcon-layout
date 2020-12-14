@@ -24,14 +24,18 @@
     cursor: pointer;
   }
 
-  &-scr1__ring-desktop, &-scr1__to-call-desktop {
+  &-scr1__ring-desktop, &-scr1__to-call-desktop, &__caption-desktop {
     display: none;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
   }
 
   &__video {
     width: 100%;
     padding-bottom: 84%;
-    background: gold;
     // width: 300px;
     // height: 254px;
     cursor: pointer;
@@ -50,6 +54,10 @@
 
   &__video {
     margin: 22px auto 0;
+  }
+  &__triggers {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -220,7 +228,7 @@
 }
 
 @media (min-width: $tablet) {
-  .header-scr1__plug, .nav__toggle, .del-br-desk {
+  .header-scr1__plug, .nav__toggle, .del-br-desk, .header__caption-phone, .header__scroll-bellow, .header__down-image {
     display: none;
   }
   .header-scr1__logo {
@@ -256,6 +264,44 @@
   }
   .ins-br-desk {
     display: inline;
+  }
+  .header__main {
+    flex-direction: row;
+  }
+  .header__up-left, .header__video {
+    width: 50%;
+  }
+  .header__caption-desktop {
+    display: block;
+  }
+  .header__discont {
+    font-size: 50px;
+    text-align: left;
+  }
+  .header__dresses {
+    text-align: left;
+  }
+  .header__tagline {
+    margin-top: 30px;
+    text-align: left;
+    width: 79%;
+  }
+  .header__video {
+    padding-bottom: 42%;
+  }
+  .header__btn-choice {
+    margin: 32px auto 0 0;
+  }
+
+  .header__triggers {
+    flex-direction: row;
+  }
+  .header__trigger {
+    width: 30%;
+    margin-right: 5%;
+  }
+  .header__trigger:last-child {
+    margin-right: 0;
   }
 }
 
@@ -298,6 +344,7 @@
       margin: 16px 0 0;
       font-size: 11px;
     }
+    
   }
 
   .nav {
@@ -308,6 +355,19 @@
     padding: 12px 15px;
     font-size: 14px;    
   }
+
+  .header__discont {
+    font-size: 65px;
+  }
+  .header__dresses {
+    margin: 13px 0 0;
+    font-size: 14px;
+  }
+  .header__tagline {
+    margin-top: 60px;
+    font-size: 14px;
+  }
+  
 } 
 
 
@@ -363,6 +423,12 @@
 }
 .trigger__image {
   margin: 13px 0 0 8px;
+}
+.trigger-2 .trigger__title {
+  margin-top: 8px;
+}
+.trigger-3 .trigger__image {
+  margin-top: 8px;
 }
 .trigger__title {
   font-family: Montserrat;

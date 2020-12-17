@@ -153,5 +153,10 @@
   color: $main-text;
 }
 
+@media (min-width: $desktop) {
+  .catalog {
+    margin: 90px auto 0;
+  }
+}
 
 

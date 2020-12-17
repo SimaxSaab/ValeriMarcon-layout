@@ -258,6 +258,9 @@
     font-size: 11px;
     text-transform: initial;
   }
+  .list a:hover {
+    color: $pic;
+  }
   .header__title {
     text-align: left;
     // font-size: 11px;
@@ -266,10 +269,17 @@
     display: inline;
   }
   .header__main {
+    margin-top: 40px;
     flex-direction: row;
   }
   .header__up-left, .header__video {
     width: 50%;
+  }
+  .header__up-left {
+    margin-top: 10px;
+  }
+  .header__video {
+    margin-top: 0;
   }
   .header__caption-desktop {
     display: block;

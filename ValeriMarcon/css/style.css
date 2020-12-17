@@ -1073,6 +1073,10 @@ img {
     text-transform: initial;
   }
 
+  .list a:hover {
+    color: #f7a18b;
+  }
+
   .header__title {
     text-align: left;
   }
@@ -1082,6 +1086,7 @@ img {
   }
 
   .header__main {
+    margin-top: 40px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
@@ -1092,6 +1097,14 @@ img {
   .header__up-left,
   .header__video {
     width: 50%;
+  }
+
+  .header__up-left {
+    margin-top: 10px;
+  }
+
+  .header__video {
+    margin-top: 0;
   }
 
   .header__caption-desktop {
@@ -1201,6 +1214,10 @@ img {
   .header__tagline {
     margin-top: 60px;
     font-size: 14px;
+  }
+
+  .catalog {
+    margin: 90px auto 0;
   }
 }
 

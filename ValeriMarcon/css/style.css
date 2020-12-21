@@ -935,12 +935,24 @@ img {
 }
 
 .catalog__card {
-  margin: 26px 0 0;
+  margin: 26px 0 0 30px;
   display: inline-block;
 }
 
 .catalog__card p {
   white-space: normal;
+}
+
+.catalog__card:first-child {
+  margin-left: 0;
+}
+
+.catalog__pagination {
+  display: none;
+}
+
+.fire-tablet {
+  display: none;
 }
 
 .card {
@@ -1003,6 +1015,7 @@ img {
   font-size: 14px;
   margin: 10px 0 0;
   text-decoration: underline;
+  height: 33px;
 }
 
 .card__btn-more {
@@ -1149,6 +1162,66 @@ img {
 
   .header__trigger:last-child {
     margin-right: 0;
+  }
+
+  .catalog__choosing {
+    margin: 37px 0 0;
+  }
+
+  .catalog__dress-name {
+    margin: 19px 0 0;
+  }
+
+  .catalog__cards {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+    -webkit-justify-content: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+
+  .catalog__card {
+    margin-left: 0;
+  }
+
+  .catalog__pagination {
+    display: block;
+    margin: 40px auto;
+    max-width: 350px;
+  }
+
+  .catalog__pagination a {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    color: #a29fa0;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+
+  .catalog__pagination a.catalog__link-active,
+  .catalog__pagination a.catalog__link-arrow {
+    color: #000;
+  }
+
+  .fire-tablet {
+    display: initial;
+  }
+
+  .card {
+    width: 176px;
+  }
+
+  .card__pic {
+    width: 176px;
+    height: 235px;
   }
 }
 

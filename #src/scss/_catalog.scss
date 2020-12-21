@@ -76,13 +76,24 @@
   }
 
   &__card {
-    margin: 26px 0 0; 
+    margin: 26px 0 0 30px; 
     display: inline-block;
     
     p {
       white-space: normal;
     }
   }
+  &__card:first-child {
+    margin-left: 0;
+  }
+
+  &__pagination {
+    display: none;
+  }
+}
+
+.fire-tablet {
+  display: none;
 }
 
 .card {
@@ -139,6 +150,7 @@
   font-size: 14px;
   margin: 10px 0 0;
   text-decoration: underline;
+  height: 33px;
 }
 .card__btn-more {
   padding: 10px 15px;
@@ -151,6 +163,57 @@
   margin: 16px 0 0;
   text-decoration: none;
   color: $main-text;
+}
+
+@media (min-width: $tablet) {
+  .catalog {
+    &__choosing {
+      margin: 37px 0 0;
+    }
+    &__dress-name {
+      margin: 19px 0 0;
+    }
+
+    &__cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+    &__card {
+      margin-left: 0;
+    }
+
+    &__pagination {
+      display: block;
+      margin: 40px auto;
+      max-width: 350px;
+    
+      a {
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        color: $pag;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        &.catalog__link-active, &.catalog__link-arrow {
+          color: $main-text;
+        }
+      }
+      
+    }
+    
+  }
+  .fire-tablet {
+    display: initial;
+  }
+  .card {
+    width: 176px;
+  }
+  .card__pic {
+    width: 176px;
+    height: 235px;
+  }
 }
 
 @media (min-width: $desktop) {
